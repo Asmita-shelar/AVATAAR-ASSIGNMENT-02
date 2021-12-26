@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <thread>
+            <td>UID</td>
+            <td>NAME</td>
+            <td>GENDER</td>
+            <td>EMAIL</td>
+        </thread>
+
+
+        {% for row in rows %}
+        <tr>
+            <td>{{row['uid']}}</td>
+            <td>{{row['name']}}</td>
+            <td>{{row['gender']}}</td>
+            <td>{{row['email']}}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+    <a href="/">Go to Home page</a>
+
+
+</body>
+
+</html>
